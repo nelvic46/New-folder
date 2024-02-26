@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/309a407b57.js" crossorigin="anonymous"></script>
+
+    <style>
+        .main-container{
+            border: none;
+            width: 100%;
+            height: 100vh;
+             display: flex;
+             justify-content: space-around;
+        }
+        .box {
+            width: 50%;
+            height: 100vh;
+        }
+        .box-1{
+            background-color: aliceblue;
+        }
+        .h1{
+            font-size: 3rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .log{
+            margin-top: -20px;
+            color: rgba(0,0,0,0.544);
+        }
+        .log a{
+            text-decoration: none;
+            color: blue;
+         }
+        .form {
+            margin-top: 40px;
+        } 
+        .input{
+            width: 458px;
+            height: 50px;
+            border: 2px solid rgba(0,0,0,0.443);
+            border-radius: 10px;
+            padding-left: 20px;
+        
+        }
+        .btn{
+            width: 458px;
+            height: 50px;
+            border: 2px none rgba(0,0,0,0.443);
+            border-radius: 10px;
+            padding-left: 20px;
+            background-color: aqua;
+        }
+    .btnb{
+        width: 458px;
+            height: 50px;
+            border: 2px none rgba(0,0,0,0.443);
+            border-radius: 10px;
+            padding-left: 20px;
+            background-color: aliceblue;
+        margin-top: 10px;}
+          
+    .btnb i{padding-right: 15px;}
+    .log2 span{ 
+        color: aqua;
+        margin-right: 60px;
+        
+    }
+    .log2{
+        color:aqua;
+    }
+    
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box box-1"></div>
+            <div calss="box box-2">
+                <h1>Sign in to victor's form</h1>
+                <p class="log">
+                    Already a member?<span><a href="#" class="login">Log in</a></span>
+                </p>
+                <div class="form">
+                   <h2 class="mail">E-mail</h2>
+                   <input class="input" type="email" placeholder="name@gmail.com                                                                                           @">
+                </div>
+                <div class="form">
+                    <h2 class="mail">Password</h2>
+                    <input class="input" type="password" id="password" minlength="6" maxlength="10" 1 capital letter required><br>
+               
+                </div><br>
+                <button class="btn">Create an account</button><br>
+
+                <button class="btnb"> <i class="fa-brands fa-google fa-2xl fa-beat" style="color: aqua;"></i><pr>Sign up with Google</button>
+                    <p class="log2"> <span>Privacy Policy</span>Term of Service</p>
+        </div>
+    </div>
+</body>
+</html>

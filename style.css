@@ -1,0 +1,26 @@
+.main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    
+    
+
+}
+.box1{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    justify-content: space-around;
+}
+.box2{
+    width: 100%;
+    height: 100vh;
+
+
+}
+.circle img{
+    height: 250px;
+    width: 250px;
+    border-radius:50%;
+    justify-content: center;}
+    

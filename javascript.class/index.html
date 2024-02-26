@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    let Country='China'
+    let Country2='Nigeria'
+    let Country3='USA'
+    let Country4='Japan'
+    let country='England'
+
+    let Continent='Asia'
+    let Continent2='Africa'
+    let Continent3='Asia'
+
+    let Population=290
+    let Population2=3000000
+    let Population3=290
+
+    console.log(`${Country2} of ${Population} citizen is located in ${Continent2}`)
+    
+alert("itachi is stupendious")
+
+
+// Function Declaration
+function countryTemplate(){
+        console.log(`This is a funtion declarations`); 
+}
+
+// Function with Parameters
+
+function juiceMaker(apple,mango){
+    console.log(`The juice is made with ${apple} apples and ${mango} mangoes`);
+}
+juiceMaker(4, 7)
+juiceMaker(77, 2)
+juiceMaker(10, 5)
+
+function countryDefinition(county, population, continent){
+console.log
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Assignment\
+function area (length, breath){
+    return length*breath
+}
+let areaOfaRectangle = area (4, 5);
+console.log (areaOfaRectangle);
+// Function Expression 
+let areaOfaRectangle2= function(length, breath){
+    return length*breath;};
+    let area2 = areaOfaRectangle2(5, 8);
+    console.log(area2)
+    // Arrow Function
+    let areaOfaRectangle3 = (length, breath)=>length*breath;
+    let area3 = areaOfaRectangle3 (9, 10);
+    console.log(area3)
+// Array
+const countries =['Nigeria', 'Ghana', 'Morocco', 'United State Of America', 'England',];
+
+const countryval =[Country, Country2, Country3, Country4];
+console.log(countries);
+console.log(countries.length);
+console.log(countries[countries.length - 1]);//calling the last element on the array
+console.log(countries[3]);
+
+countries.push("south africa");
+countries.push("japan");
+// unshift method -it adds element to the front of the Array
+countries.unshift("france");
+countries.unshift("finland");
+// pop method- it remove the last element on the array
+countries.pop();
+// shift method- it remove the frist element on the array 
+countries.shift();
+console.log(countries);
+
+// to check the index number of an element
+console.log(countries.indexOf("Nigeria"));  
+
+// checks if an element exists in the arrays
+console.log(countries.includes("Cameroon"));
+
+console.log(countries.includes("Nigeria"))
+
+// object
+const student ={
+    name: "Victor",
+    age:25,
+    job:"Pastor",
+    address:"'blk 7g flat 1 jakande estate",
+    calcAge: function(age) {
+        return 2024 -age;
+    },
+    Friends: ["kesh", "ife" , "victor"]
+};
+console.log(student);
+console.log(student.name); //using the dot Notation
+console.log(student["age"]);//using the Bracket Notation
+console.log(student.Friends[2]);
+</script> 
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = "victor";
+        const age = 29;
+        let drink = age >= 18 ?"Alcohol" : "Water";//now i'm going to decide to assign either water or alcohol based on the age of the user
+        const day = "Tuesday";
+        let place;
+        const venue ="Flip To Tech";
+        const venue2 ="Home";
+        const driversLicense = true
+
+        console.log(`Give ${user} ${drink}`);
+
+        if (age >= 18 && driversLicense) {
+            console.log(`${user} is allowed to drive`);
+        } else {
+            console.log(`Seize the car`)
+        }
+        // Control Structures
+        // If else Statement (Selection control structure)
+        //  if (age >=18) {
+        //    drink = "Alcohol";
+        //  console.log(`This user is allowed to ${drink}`);
+         //  } else {
+        //   drink = "Water";
+        //   console.log(`Give this user ${drink}`);
+        // }
+
+        if (day === "Monday"){
+            place =venue;
+            console.log(`${user} goes to ${place}`);
+        } else if (day === "Tuesday"){
+            place = venue2;
+            console.log(`${user} stay at home`);
+        } else if (day ==="Wednesday") {
+            place = venue;
+            console.log(`${user} goes to ${place}`);
+        } 
+        //Classwork
+
+    
+     let credits
+     let jamb
+     let jambCutOff
+     let postUTME
+     let postUTMECutOff
+      
+     credits =window.prompt("your total credit")
+     jamb = window.prompt("your jamb score")
+     postUTME =window.prompt("your post utme score")
+     creditsCutOff =5
+     jambCutOff =240
+    postUTMECutOff =28
+
+     if (credits >= creditsCutOff && jamb>=jambCutOff && postUTME>=postUTMECutOff ) {
+        console.log(`${user} , you have gotten Adimission into Clliford university`);
+     } else{
+        console.log(`${user}, sorry your Adimission is Declined`)
+     }
+        
+    </script>
+</body>
+</html>

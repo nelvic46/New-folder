@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }                                                                                                                                                                                                    
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        button{
+            margin: 10px;
+            width: 120px;
+            height: 30px;
+            background-color: rgb(5, 241, 166);
+            border: none;
+            outline: 2px solid black;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>0</h1>
+    <div class="counter">
+        <button class="decrease">Decrease</button>
+        <button class="increase">Increase</button>
+    </div>
+    <button class="reset">Reset</button>
+    <button class="Changecolor">Changecolor</button> 
+</div>
+ 
+   <script>
+    let Decrease = document.querySelector(".decrease")
+    let Increase = document.querySelector(".increase")
+    let Reset = document.querySelector(".reset")
+    let header = document.querySelector("h1")
+    let count = 0
+       
+
+    Decrease.addEventListener("click", function(){
+        count -= 1
+        header.textContent = count
+        
+        if (count <0){
+            header.style.color = "red"
+        }
+    })
+    Increase.addEventListener("click" ,function(){
+        count += 1
+        header.textContent = count
+
+        if (count >0){
+            header.style.color = "blue"
+        }
+    })    
+    Reset.addEventListener("click", function(){
+        count = 0
+        header.textContent = count
+
+        if (count ===0){
+            header.style.color = "green"
+        }
+    })   
+
+let bg= document.querySelector(".Changecolor");
+let body= document.querySelector("body")
+let coloArr = [
+    "red",
+    "blue",
+    "pink",
+    "green",
+    "gray",
+    "brown",
+];
+let count2 = -1
+
+bg.addEventListener("click",function(){
+count2++;
+body.style.backgroundColor = coloArr[count2];
+if (count2 > coloArr.length -1){
+    count2 = -1
+}
+})
+
+   </script>
+</body>
+</html>
